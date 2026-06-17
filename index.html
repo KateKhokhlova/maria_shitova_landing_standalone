@@ -861,6 +861,10 @@ h2 {
   .cta-photo::after { background: linear-gradient(180deg, var(--accent) 0%, rgba(230, 83, 50, 0.18) 38%, transparent 70%); }
 }
 
+@media (max-width: 800px) {
+  .floating-card { display: none; }
+}
+
 @media (max-width: 720px) {
   .container { width: min(100% - 28px, var(--max)); }
   .site-header { position: static; }
@@ -870,7 +874,6 @@ h2 {
   h1 { font-size: clamp(52px, 18vw, 78px); }
   .hero-grid { gap: 34px; }
   .photo-card, .photo-card img { min-height: 500px; }
-  .floating-card { display: none; }
   .section { padding: 68px 0; }
   .section-sm { padding: 56px 0; }
   .services-grid,
